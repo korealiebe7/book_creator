@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>우리의 동화책</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(#fef9f4, #e3f6f5);
+      color: #333;
+    }
+    header {
+      background: #fdd835;
+      color: #000;
+      padding: 2rem 1rem;
+      text-align: center;
+      font-size: 2rem;
+      font-weight: bold;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    .intro {
+      text-align: center;
+      padding: 2rem;
+      font-size: 1.2rem;
+    }
+    .book-preview {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      padding: 2rem;
+    }
+    .card {
+      background: #fff8dc;
+      border-radius: 1.5rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      overflow: hidden;
+      width: 280px;
+      transition: transform 0.3s ease;
+    }
+    .card:hover {
+      transform: scale(1.03);
+    }
+    .card img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .card-content {
+      padding: 1rem;
+    }
+    .card-content h3 {
+      margin-top: 0;
+      font-size: 1.3rem;
+      color: #4e342e;
+    }
+    .card-content p {
+      font-size: 1rem;
+      line-height: 1.5;
+      color: #5d4037;
+    }
+    footer {
+      background: #fdd835;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #333;
+      margin-top: 3rem;
+    }
+    @media (max-width: 600px) {
+      .book-preview {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>✨ 우리들의 동화책 ✨</header>
+
+<section class="intro">
+  <p>아이들의 상상력을 키워주는 따뜻한 이야기.  
+  자연과 친구, 모험과 감동이 있는 동화책을 만나보세요.</p>
+</section>
+
+<section class="book-preview">
+  <div class="card">
+    <img src="https://source.unsplash.com/featured/?storybook" alt="표지 이미지">
+    <div class="card-content">
+      <h3>호랑의 숲</h3>
+      <p>사라지는 숲을 지키기 위한 아기 호랑이의 모험이 시작됩니다.</p>
+    </div>
+  </div>
+  <div class="card">
+    <img src="https://source.unsplash.com/featured/?ocean,turtle" alt="장면 1">
+    <div class="card-content">
+      <h3>바다거북의 약속</h3>
+      <p>바다를 깨끗하게 만들기 위한 작은 거북이의 용기 있는 이야기.</p>
+    </div>
+  </div>
+  <div class="card">
+    <img src="https://source.unsplash.com/featured/?forest,bear" alt="장면 2">
+    <div class="card-content">
+      <h3>엘리의 숲속 친구들</h3>
+      <p>동물 친구들과 함께하는 따뜻한 자연 보호 이야기.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  ⓒ 2025 우리의 동화책. All rights reserved.
+</footer>
+
+</body>
+</html>
